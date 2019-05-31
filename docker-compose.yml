@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  rest-api:
+    # image: 
+
+    build:
+      context: .
+
+    ports:
+      - 5000:8080
+
+    environment:
+        - VAULT_CONFIG_ROOT=secret/ccc/
